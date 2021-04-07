@@ -1,3 +1,6 @@
+using System;
+using System.Runtime;
+using System.IO;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -7,7 +10,7 @@ namespace SpotifyUITest
     public class SpotifyLoginPageTests
     {
         private IWebDriver driver;
-        private const string chromeDriverPath = @"D:\School\";
+        private string chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
 
         [SetUp]
         public void SetUp()
