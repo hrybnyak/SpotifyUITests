@@ -15,7 +15,10 @@ namespace SpotifyUITest
         [SetUp]
         public void SetUp()
         {
-			Console.WriteLine(chromeDriverPath);
+			if(string.IsNullOrEmpty(chromeDriverPath))
+			{
+				Console.WriteLine("chrome driver path is null");
+			}
             driver = new ChromeDriver(chromeDriverPath);
         }
 
