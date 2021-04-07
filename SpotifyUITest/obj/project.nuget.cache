@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WqT9Sq+qQf3xnmA9y8gjD0Ogrlu7GgDaFPE5DcgsngzX2kIbSyv5JpZUl7vQXasJaY9HVXLKOtr7WZaqjtnnDQ==",
+  "dgSpecHash": "+1aoTkXEtqSsVkhxgDcp9VBeZ+PMAhGSfDIb5hNSBjoSYU3V2is6VoceBLYlLUsL++dZQN4pLvMGRIOR1C1d1g==",
   "success": true,
   "projectFilePath": "D:\\Code\\SpotifyUITests\\SpotifyUITest\\SpotifyUITest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lisa\\.nuget\\packages\\anglesharp\\0.14.0\\anglesharp.0.14.0.nupkg.sha512",
     "C:\\Users\\Lisa\\.nuget\\packages\\anglesharp.css\\0.14.2\\anglesharp.css.0.14.2.nupkg.sha512",
+    "C:\\Users\\Lisa\\.nuget\\packages\\chromium.chromedriver\\2.37.0\\chromium.chromedriver.2.37.0.nupkg.sha512",
     "C:\\Users\\Lisa\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\Lisa\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Lisa\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",

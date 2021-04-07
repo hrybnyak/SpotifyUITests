@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[0.14.2, )"
             },
+            "Chromium.ChromeDriver": {
+              "target": "Package",
+              "version": "[2.37.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"

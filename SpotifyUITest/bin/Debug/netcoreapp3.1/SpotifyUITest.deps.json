@@ -10,6 +10,7 @@
         "dependencies": {
           "AngleSharp": "0.14.0",
           "AngleSharp.Css": "0.14.2",
+          "Chromium.ChromeDriver": "2.37.0",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.16.1",
@@ -41,6 +42,7 @@
           }
         }
       },
+      "Chromium.ChromeDriver/2.37.0": {},
       "Microsoft.CodeCoverage/16.5.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -898,6 +900,13 @@
       "sha512": "sha512-2USpPu9V/+1iBwHpanBsqr1eR+3vxKe19ZsnejbZfxNOadsMvUUkJ+0OjMsQmT0ExSW4vjCKXq9K/JWv0ie8JQ==",
       "path": "anglesharp.css/0.14.2",
       "hashPath": "anglesharp.css.0.14.2.nupkg.sha512"
+    },
+    "Chromium.ChromeDriver/2.37.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p/5WFR9H4RN4/oTC4z1TWXVjJ94N+Tp9F5PBE5LcmGf17uh5Xvt9UkjyEnUgRPjMG+zHyDmBVxR6Zi0/1Npkqg==",
+      "path": "chromium.chromedriver/2.37.0",
+      "hashPath": "chromium.chromedriver.2.37.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.5.0": {
       "type": "package",

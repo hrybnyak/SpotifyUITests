@@ -26,6 +26,9 @@
           "lib/netstandard2.0/AngleSharp.Css.dll": {}
         }
       },
+      "Chromium.ChromeDriver/2.37.0": {
+        "type": "package"
+      },
       "Microsoft.CodeCoverage/16.5.0": {
         "type": "package",
         "compile": {
@@ -1298,6 +1301,21 @@
         "lib/netstandard1.3/AngleSharp.Css.xml",
         "lib/netstandard2.0/AngleSharp.Css.dll",
         "lib/netstandard2.0/AngleSharp.Css.xml"
+      ]
+    },
+    "Chromium.ChromeDriver/2.37.0": {
+      "sha512": "p/5WFR9H4RN4/oTC4z1TWXVjJ94N+Tp9F5PBE5LcmGf17uh5Xvt9UkjyEnUgRPjMG+zHyDmBVxR6Zi0/1Npkqg==",
+      "type": "package",
+      "path": "chromium.chromedriver/2.37.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "chromium.chromedriver.2.37.0.nupkg.sha512",
+        "chromium.chromedriver.nuspec",
+        "content/chromedriver.exe",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "Microsoft.CodeCoverage/16.5.0": {
@@ -4673,6 +4691,7 @@
     ".NETCoreApp,Version=v3.1": [
       "AngleSharp >= 0.14.0",
       "AngleSharp.Css >= 0.14.2",
+      "Chromium.ChromeDriver >= 2.37.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.16.1",
@@ -4730,6 +4749,10 @@
           "AngleSharp.Css": {
             "target": "Package",
             "version": "[0.14.2, )"
+          },
+          "Chromium.ChromeDriver": {
+            "target": "Package",
+            "version": "[2.37.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

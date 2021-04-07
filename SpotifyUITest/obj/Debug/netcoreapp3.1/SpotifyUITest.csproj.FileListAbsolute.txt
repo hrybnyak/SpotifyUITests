@@ -196,3 +196,4 @@ D:\Code\SpotifyUITests\SpotifyUITest\obj\Debug\netcoreapp3.1\SpotifyUITest.cspro
 D:\Code\SpotifyUITests\SpotifyUITest\obj\Debug\netcoreapp3.1\SpotifyUITest.dll
 D:\Code\SpotifyUITests\SpotifyUITest\obj\Debug\netcoreapp3.1\SpotifyUITest.pdb
 D:\Code\SpotifyUITests\SpotifyUITest\obj\Debug\netcoreapp3.1\SpotifyUITest.genruntimeconfig.cache
+D:\Code\SpotifyUITests\SpotifyUITest\bin\Debug\netcoreapp3.1\chromedriver.exe

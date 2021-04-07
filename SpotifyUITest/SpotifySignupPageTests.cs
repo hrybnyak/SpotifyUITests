@@ -14,8 +14,7 @@ namespace SpotifyUITest
         [SetUp]
         public void SetUp()
         {
-			string currentDirectory = Environment.CurrentDirectory;
-            driver = new ChromeDriver(currentDirectory);
+            driver = new ChromeDriver();
         }
 
         [Test]
