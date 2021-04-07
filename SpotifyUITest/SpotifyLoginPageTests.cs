@@ -42,8 +42,8 @@ namespace SpotifyUITest
         {
 			if (driver != null)
 			{
-				driver.Close();
-			}
+                driver.Dispose();
+            }
         }
     }
 }
