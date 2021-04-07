@@ -10,14 +10,14 @@ namespace SpotifyUITest
     public class SpotifySignupPageTests
     {
         private IWebDriver driver;
-        private string chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-
+		
         [SetUp]
         public void SetUp()
         {
+			string chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
 			if(string.IsNullOrEmpty(chromeDriverPath))
 			{
-				Console.WriteLine("chrome driver path is null");
+				throw new ArgumentNullException("chromeDriverPath is null");
 			}
             driver = new ChromeDriver(chromeDriverPath);
         }
