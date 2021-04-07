@@ -14,6 +14,8 @@ namespace SpotifyUITest
         [SetUp]
         public void SetUp()
         {
+            var co = new ChromeOptions();
+            co.AddArgument("no-sandbox");
             driver = new ChromeDriver();
         }
 
