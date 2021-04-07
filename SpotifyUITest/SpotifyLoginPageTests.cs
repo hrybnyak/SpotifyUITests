@@ -15,10 +15,6 @@ namespace SpotifyUITest
         public void SetUp()
         {
 			string currentDirectory = Environment.CurrentDirectory;
-			if(string.IsNullOrEmpty(currentDirectory))
-			{
-				throw new ArgumentException("currentDirectory is null");
-			}
             driver = new ChromeDriver(currentDirectory);
         }
 
