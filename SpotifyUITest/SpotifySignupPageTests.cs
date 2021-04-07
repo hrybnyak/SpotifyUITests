@@ -47,7 +47,7 @@ namespace SpotifyUITest
             driver.Url = "https://www.spotify.com/uk/signup/";
             var element = driver.FindElement(By.Id("confirm"));
             var elementPadding = element.GetCssValue("padding");
-            Assert.AreEqual("12px", elementPadding);
+            Assert.AreEqual("14px", elementPadding);
         }
 
         [TearDown]
