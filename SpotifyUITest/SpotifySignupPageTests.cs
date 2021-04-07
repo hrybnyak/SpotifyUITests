@@ -14,7 +14,12 @@ namespace SpotifyUITest
         [SetUp]
         public void SetUp()
         {
-			string chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+			string currentDirectory = Environment.CurrentDirectory;
+			if(string.IsNullOrEmpty(currentDirectory))
+			{
+				throw new ArgumentNullException("currentDirectory is null");
+			}
+			string chromeDriverPath = Directory.GetParent(currentDirectory).Parent.Parent.FullName;
 			if(string.IsNullOrEmpty(chromeDriverPath))
 			{
 				throw new ArgumentNullException("chromeDriverPath is null");
@@ -40,10 +45,10 @@ namespace SpotifyUITest
             driver.Url = "https://www.spotify.com/uk/signup/";
             var element = driver.FindElement(By.Id("day"));
             element.SendKeys("12");
-            driver.FindElement(By.Id("confirm")).Click();
+            driver.FindElement(By.Id("month")).Click();
             element = driver.FindElement(By.Id("day"));
             var elementBorderColor = element.GetCssValue("border-color");
-            Assert.AreEqual("rgb(24, 24, 24)", elementBorderColor);
+            Assert.AreEqual("rgb(0, 0, 0)", elementBorderColor);
         }
 
         [Test]

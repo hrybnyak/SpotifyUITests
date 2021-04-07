@@ -14,7 +14,12 @@ namespace SpotifyUITest
         [SetUp]
         public void SetUp()
         {
-			string chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+			string currentDirectory = Environment.CurrentDirectory;
+			if(string.IsNullOrEmpty(currentDirectory))
+			{
+				throw new ArgumentNullException("currentDirectory is null");
+			}
+			string chromeDriverPath = Directory.GetParent(currentDirectory).Parent.Parent.FullName;
 			if(string.IsNullOrEmpty(chromeDriverPath))
 			{
 				throw new ArgumentNullException("chromeDriverPath is null");
