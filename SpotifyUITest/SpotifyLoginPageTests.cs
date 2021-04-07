@@ -15,6 +15,7 @@ namespace SpotifyUITest
         [SetUp]
         public void SetUp()
         {
+			Console.WriteLine(chromeDriverPath);
             driver = new ChromeDriver(chromeDriverPath);
         }
 
