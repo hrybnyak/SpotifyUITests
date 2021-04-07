@@ -14,7 +14,7 @@ namespace SpotifyUITest
         [SetUp]
         public void SetUp()
         {
-			string currentDirectory = Environment.CurrentDirectory;
+			string currentDirectory = Environment?.CurrentDirectory;
 			if(string.IsNullOrEmpty(currentDirectory))
 			{
 				throw new ArgumentException("currentDirectory is null");
@@ -63,7 +63,10 @@ namespace SpotifyUITest
         [TearDown]
         public void TearDown()
         {
-            driver.Close();
+			if (driver != null)
+			{
+				driver.Close();
+			}
         }
     }
 }
