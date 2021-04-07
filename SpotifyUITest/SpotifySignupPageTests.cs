@@ -14,7 +14,9 @@ namespace SpotifyUITest
         [SetUp]
         public void SetUp()
         {
-            driver = new ChromeDriver();
+            var co = new ChromeOptions();
+            co.AddArgument("no-sandbox");
+            driver = new ChromeDriver(co);
         }
 
         [Test]
@@ -42,7 +44,7 @@ namespace SpotifyUITest
         }
 
         [Test]
-        public void SignupPage_PaddingForConfirmBox_Is12px()
+        public void SignupPage_PaddingForConfirmBox_Is14px()
         {
             driver.Url = "https://www.spotify.com/uk/signup/";
             var element = driver.FindElement(By.Id("confirm"));
